@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página inicial</title>
+  </head>
+  <body>
+    <font face="Georgia">
+    <header id="topo">
+      <h1>Conhecendo o <abbr title="Hypertext Markup Language">HTML</abbr></h1>
+      <div>
+        <h2>Índice:</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="#estrutura-basica">
+                Estrutura básica do HTML (doctype, html, head, body, tags,
+                atributos, listas, textos e links)
+              </a>
+            </li>
+            <li>
+              <a href="#formularios">
+                Conhecendo formulários (form, input, tipos de input, checkbox,
+                radio, button, select e textarea)
+              </a>
+            </li>
+            <li>
+              <a href="#formatacoes">
+                Realizando formatações (textos, div, span, fieldset, embed,
+                iframe e cores)
+              </a>
+            </li>
+            <li>
+              <a href="#midias">
+                Inserindo mídias (img, audio, video, track e iframe)
+              </a>
+            </li>
+            <li>
+              <a href="#tabelas">
+                Criando tabelas (table, tr, td, th, thead, tbody, tfoot e
+                estilização)
+              </a>
+            </li>
+            <li>
+              <a href="#tags-semanticas">
+                Tags semânticas e sua importância (semântica, HTML5,
+                acessibilidade, SEO, scraping, main, header, footer, nav,
+                section, aside, article, blockquote, q, figure, figcaption,
+                picture)
+              </a>
+            </li>
+            <li>
+              <a href="#referencias">
+                Referências de conteúdos sobre HTML
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+    
+    <main>
+      <section id="estrutura-basica">
+        <h3>Estrutura básica do HTML</h3>
+        <small><a href="#topo">início</a></small>
+        <p>
+          Todo documento HTML segue uma estrutura padrão, com as seguintes
+          partes principais:
+        </p>
+        <ul>
+          <li>
+            <u>&lt;!DOCTYPE html&gt;</u>: Informa ao navegador que o documento
+            está usando o HTML5.
+          </li>
+          <li><u>&lt;html&gt;</u>: Elemento raiz de todo o código HTML.</li>
+          <li>
+            <u>&lt;head&gt;</u>: Contém <strong>metadados</strong>> (informações
+            sobre o documento), como título, codificação de caracteres, links
+            para CSS, etc.
+          </li>
+          <li>
+            <u>&lt;title&gt;</u>: Define o <strong>título da aba</strong> do
+            navegador.
+          </li>
+          <li>
+            <u>&lt;body&gt;</u>: Onde fica o
+            <strong>conteúdo visível</strong> da página.
+          </li>
+        </ul>
+
+        <h4>Exemplo de estrutura:</h4>
+        <p>
+          <i>&nbsp;&lt;!DOCTYPE html&gt;</i><br />
+          &nbsp;<b>&lt;html lang="pt-br"&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;head&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+            >&lt;meta charset=</b
+          >"UTF-8" <b>/&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;title></b>Título
+          da Página<b>&lt;/title&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/head&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;body&gt;</b><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo
+          da página<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/body&gt;</b><br />
+          &nbsp;<b>&lt;/html&gt;</b>
+        </p>
+
+        <h3>Tags:</h3>
+        <p>
+          Tags são os blocos de construção do HTML, usadas para marcar e
+          estruturar os elementos da página. Algumas possuem fechamento como:
+          &lt;p&gt;...&lt;/p&gt;, &lt;h1&gt;...&lt;/h1&gt;,
+          &lt;div&gt;...&lt;/div&gt;, e outras são tags auto-fecha como: &lt;img
+          /&gt;, &lt;br /&gt;, &lt;hr /&gt;&lt;/p&gt;
+        </p>
+
+        <h3>Atributos das Tags:</h3>
+        <p>
+          São informações extras que podemos passar para as tags, para alterar
+          ou configurar o comportamento delas. Exemplos de atributos comuns:
+        </p>
+        <table border="1">
+          <tr>
+            <th>Atributo</th>
+            <th>Função</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Identificador único do elemento.</td>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>Define uma ou mais classes CSS.</td>
+          </tr>
+          <tr>
+            <td>style</td>
+            <td>Permite aplicar estilos inline.</td>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>Origem de uma imagem ou arquivo embutido.</td>
+          </tr>
+          <tr>
+            <td>href</td>
+            <td>Define o endereço de um link.</td>
+          </tr>
+          <tr>
+            <td>alt</td>
+            <td>Texto alternativo para imagens.</td>
+          </tr>
+        </table>
+
+        <h3>Tags de textos:</h3>
+        <p>
+          São as mais comuns utilizadas para construir textos nas páginas webs:
+        </p>
+        <table border="1">
+          <tr>
+            <th>Tag</th>
+            <th>Função</th>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt; até &lt;h6&gt;</td>
+            <td>Títulos, do mais importante (h1) ao menos importante (h6).</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>Parágrafo.</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td>Quebra de linha.</td>
+          </tr>
+          <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Linha horizontal.</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Texto importante (negrito semântico).</td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt;</td>
+            <td>Ênfase no texto (itálico semântico).</td>
+          </tr>
+        </table>
+
+        <h3>Listas ordenadas e não ordenadas:</h3>
+        <p>
+          As <em>listas ordenadas</em> possuem numeração como (1., 2., 3., ...)
+          ou até mesmo letras como (A., B., C., ...) e são construídas através
+          dos aninhamento de tags &lt;ol&gt; &lt;/ol&gt;(define a lista
+          ordenada) e &lt;li&gt; &lt;/li&gt; (define os itens da lista).
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;ol&gt;</b><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+              >&lt;li&gt; &lt;/li&gt;</b
+            >
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/ol&gt;</b><br />
+          </p>
+        </p>
+        <p>
+          As <em>listas não ordenadas</em> não possuem numeração, elas são
+          separadas através de círculos e quadrados e são construídas através
+          dos aninhamento de tags &lt;ul&gt; &lt;/ul&gt;(define a lista
+          ordenada) e &lt;li&gt; &lt;/li&gt; (define os itens da lista).
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;ul&gt;</b><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+              >&lt;li&gt; &lt;/li&gt;</b
+            >
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/ul&gt;</b><br />
+          </p>
+        </p>
+
+        <h3>Trabalhando com links</h3>
+        <p>
+          Os links em HTML são criados com a tag
+          <code>&lt;a&gt;</code> (âncora). Eles permitem navegar entre páginas,
+          arquivos, seções ou até mesmo sites externos.
+        </p>
+
+        <h4>Estrutura de um link:</h4>
+        <p>
+          A sintaxe básica de um link é:<br />
+          <code>&lt;a href="URL"&gt;Texto do Link&lt;/a&gt;</code>
+        </p>
+
+        <h4>Atributos principais:</h4>
+        <ul>
+          <li>
+            <code>href</code>: Define o destino do link (página, seção, site,
+            e-mail, etc.).
+          </li>
+          <li>
+            <code>target</code>: Define onde o link será aberto. O valor
+            <code>_blank</code> faz com que o link abra em uma nova aba.
+          </li>
+          <li>
+            <code>title</code>: Mostra um texto de dica (tooltip) quando o
+            usuário passa o mouse sobre o link.
+          </li>
+        </ul>
+
+        <h4>Exemplos:</h4>
+        <p>
+          Link para outro site:<br />
+          <code
+            >&lt;a href="https://www.exemplo.com"&gt;Visite o
+            site&lt;/a&gt;</code
+          >
+        </p>
+        <p>
+          Link que abre em nova aba:<br />
+          <code
+            >&lt;a href="https://www.exemplo.com" target="_blank"&gt;Abrir em
+            nova aba&lt;/a&gt;</code
+          >
+        </p>
+        <p>
+          Link interno para uma seção da mesma página:<br />
+          <code>&lt;a href="#formulario"&gt;Ir para formulários&lt;/a&gt;</code>
+        </p>
+        <p>
+          Link para envio de e-mail:<br />
+          <code
+            >&lt;a href="mailto:exemplo@email.com"&gt;Enviar
+            e-mail&lt;/a&gt;</code
+          >
+        </p>
+        <p>
+          Link para download de arquivo:<br />
+          <code
+            >&lt;a href="documento.pdf" download&gt;Baixar PDF&lt;/a&gt;</code
+          >
+        </p>
+
+        <h4>Importância dos links:</h4>
+        <p>
+          <mark>Os links são essenciais para a navegação entre páginas, acessibilidade
+          de conteúdos e usabilidade do site. Eles também são fundamentais para
+          SEO e indexação em mecanismos de busca.</mark>
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="formularios">
+        <h3>Conhecendo formulários</h3>
+        <small><a href="#topo">Início</a></small>
+
+        <p>
+          Os formulários em HTML são usados para coletar informações dos
+          usuários. Eles são muito utilizados em páginas de contato, cadastros,
+          pesquisas, entre outros.
+        </p>
+
+        <h4>Principais tags usadas em formulários:</h4>
+
+        <ul>
+          <li>
+            <strong>&lt;form&gt;</strong>: Define o início e o fim de um
+            formulário. É dentro dessa tag que os campos e botões do formulário
+            são inseridos. <br />Exemplo de abertura de formulário: <br />
+            <code>&lt;form action="destino.php" method="post"&gt;</code>
+          </li>
+
+          <li>
+            <strong>&lt;input&gt;</strong>: Cria campos de entrada de dados.
+            Pode ser usado para vários tipos de dados, dependendo do valor do
+            atributo <code>type</code>. <br />Exemplos:
+            <ul>
+              <li><code>&lt;input type="text"&gt;</code> → Campo de texto.</li>
+              <li>
+                <code>&lt;input type="email"&gt;</code> → Campo para e-mail.
+              </li>
+              <li>
+                <code>&lt;input type="password"&gt;</code> → Campo para senha.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>&lt;textarea&gt;</strong>: Permite que o usuário insira
+            textos maiores, como mensagens ou descrições. <br />Exemplo:
+            <br /><code
+              >&lt;textarea rows="4" cols="30"&gt;&lt;/textarea&gt;</code
+            >
+          </li>
+
+          <li>
+            <strong>&lt;select&gt;</strong> e <strong>&lt;option&gt;</strong>:
+            Criam uma lista suspensa (menu drop-down), onde o usuário pode
+            escolher uma das opções disponíveis. <br />Exemplo:
+            <br />
+            <code>
+              &lt;select&gt;<br />
+              &nbsp;&nbsp;&lt;option&gt;Opção 1&lt;/option&gt;<br />
+              &nbsp;&nbsp;&lt;option&gt;Opção 2&lt;/option&gt;<br />
+              &lt;/select&gt;
+            </code>
+          </li>
+
+          <li>
+            <strong>&lt;input type="radio"&gt;</strong>: Cria botões de opção,
+            onde o usuário pode escolher apenas uma das alternativas.
+            <br />Exemplo:
+            <br />
+            <code>
+              &lt;input type="radio" name="sexo" value="feminino"&gt;
+              Feminino<br />
+              &lt;input type="radio" name="sexo" value="masculino"&gt; Masculino
+            </code>
+          </li>
+
+          <li>
+            <strong>&lt;input type="checkbox"&gt;</strong>: Cria caixas de
+            seleção, permitindo que o usuário selecione uma ou mais opções.
+            <br />Exemplo:
+            <br />
+            <code>
+              &lt;input type="checkbox" name="interesse" value="html"&gt;
+              HTML<br />
+              &lt;input type="checkbox" name="interesse" value="css"&gt; CSS
+            </code>
+          </li>
+
+          <li>
+            <strong>&lt;button&gt;</strong>: Cria botões. Pode ser usado para
+            enviar o formulário ou realizar outras ações. <br />Exemplos:
+            <ul>
+              <li>
+                <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code> →
+                Botão para envio do formulário.
+              </li>
+              <li>
+                <code>&lt;button type="reset"&gt;Limpar&lt;/button&gt;</code> →
+                Botão para limpar os campos do formulário.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>&lt;fieldset&gt;</strong>: Agrupa elementos de um formulário. <br />
+            <ul>
+              <li>
+                <code>&lt;legend&gt;</code>: Define uma legenda para o
+                <code>fieldset</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Atributos importantes:</h4>
+        <ul>
+          <li>
+            <strong>action</strong>: Define para onde os dados do formulário
+            serão enviados.
+          </li>
+          <li>
+            <strong>method</strong>: Define o método de envio (exemplo: "GET" ou
+            "POST").
+          </li>
+          <li>
+            <strong>name</strong>: Dá um nome ao campo para ser identificado no
+            backend.
+          </li>
+          <li><strong>value</strong>: Define o valor enviado ao servidor.</li>
+          <li>
+            <strong>placeholder</strong>: Texto que aparece dentro do campo como
+            dica.
+          </li>
+          <li>
+            <strong>required</strong>: Torna o preenchimento do campo
+            obrigatório.
+          </li>
+        </ul>
+
+        <p>
+          Essas são as principais tags e atributos usados na criação de
+          formulários em HTML. Elas permitem a interação com o usuário e o envio
+          de dados para o processamento em servidores.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="formatacoes">
+        <h3>Realizando formatações</h3>
+        <small><a href="#topo">início</a></small>
+        <p>O HTML oferece várias tags para formatação de textos. Veja abaixo algumas delas:</p>
+
+        <h4>&lt;sub&gt; e &lt;sup&gt;</h4>
+        <p>
+            - A tag <code>&lt;sub&gt;</code> exibe o texto em formato subscrito, ou seja, um pouco abaixo da linha. Muito usada em fórmulas químicas, como:<br />
+            <code>H&lt;sub&gt;2&lt;/sub&gt;O</code> → H<sub>2</sub>O
+        </p>
+        <p>
+            - A tag <code>&lt;sup&gt;</code> exibe o texto em formato sobrescrito, ou seja, um pouco acima da linha. Muito usada em potências, como:<br />
+            <code>10&lt;sup&gt;2&lt;/sup&gt;</code> → 10<sup>2</sup>
+        </p>
+
+        <h4>&lt;blockquote&gt;</h4>
+        <p>
+            A tag <code>&lt;blockquote&gt;</code> é usada para indicar uma citação longa. Ela geralmente aplica um recuo no conteúdo citado. Exemplo:<br />
+            <code>&lt;blockquote&gt;Esta é uma citação longa de outro autor.&lt;/blockquote&gt;</code>
+        </p>
+        <blockquote>Esta é uma citação longa de outro autor.</blockquote>
+
+        <h4>Formatações de texto:</h4>
+        <ul>
+          <li>
+            <b><code>&lt;strong&gt;</code>:</b> Deixa o texto em negrito com
+            valor semântico.
+          </li>
+          <li>
+            <b><code>&lt;em&gt;</code>:</b> Coloca o texto em itálico com ênfase
+            semântica.
+          </li>
+          <li>
+            <b><code>&lt;u&gt;</code>:</b> Sublinha o texto.
+          </li>
+          <li>
+            <b><code>&lt;mark&gt;</code>:</b> Destaca o texto com fundo amarelo.
+          </li>
+          <li>
+            <b><code>&lt;small&gt;</code>:</b> Reduz o tamanho do texto.
+          </li>
+          <li>
+            <b><code>&lt;del&gt;</code>:</b> Indica um texto removido.
+          </li>
+          <li>
+            <b><code>&lt;ins&gt;</code>:</b> Indica um texto inserido.
+          </li>
+        </ul>
+
+        <h4>Div e Span:</h4>
+        <ul>
+          <li>
+            <code>&lt;div&gt;</code>: Container genérico em bloco, usado para
+            agrupar elementos.
+          </li>
+          <li>
+            <code>&lt;span&gt;</code>: Container genérico em linha, usado para
+            estilizações pontuais.
+          </li>
+        </ul>
+
+        <h4>Embeds e iframes:</h4>
+        <ul>
+          <li>
+            <code>&lt;embed&gt;</code>: Insere conteúdos externos, como PDF,
+            vídeos etc.
+          </li>
+          <li>
+            <code>&lt;iframe&gt;</code>: Insere outra página web dentro da
+            atual.
+          </li>
+        </ul>
+
+        <h4>Cores em HTML:</h4>
+        <p>
+          As cores podem ser aplicadas com CSS usando nomes (<code>red</code>,
+          <code>blue</code>), códigos hexadecimais (<code>#FF0000</code>), RGB
+          (<code>rgb(255,0,0)</code>), entre outros.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="midias">
+        <h3>Inserindo mídias</h3>
+        <small><a href="#topo">início</a></small>
+        <p>
+          O HTML permite inserir imagens, sons e vídeos nas páginas com as
+          seguintes tags:
+        </p>
+
+        <ul>
+          <li>
+            <code>&lt;img&gt;</code>: Exibe uma imagem. Usa os atributos
+            <code>src</code> (caminho da imagem) e <code>alt</code> (texto
+            alternativo).
+          </li>
+          <li>
+            <code>&lt;audio&gt;</code>: Insere um áudio. Deve conter o atributo
+            <code>controls</code> para exibir o player.
+          </li>
+          <li>
+            <code>&lt;video&gt;</code>: Insere um vídeo. Também usa
+            <code>controls</code> e pode incluir <code>poster</code> (imagem de
+            capa).
+          </li>
+          <li>
+            <code>&lt;track&gt;</code>: Adiciona legendas ao vídeo ou áudio.
+          </li>
+          <li>
+            <code>&lt;iframe&gt;</code>: Pode ser usado para incorporar mídias
+            externas, como vídeos do YouTube.
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="tabelas">
+        <h3>Criando tabelas</h3>
+        <small><a href="#topo">início</a></small>
+        <p>
+          As tabelas são utilizadas para organizar dados em linhas e colunas.
+        </p>
+
+        <ul>
+          <li>
+            <b><code>&lt;table&gt;</code>:</b> Define a tabela.
+          </li>
+          <li>
+            <b><code>&lt;tr&gt;</code>:</b> Cria uma linha na tabela (table
+            row).
+          </li>
+          <li>
+            <b><code>&lt;td&gt;</code>:</b> Cria uma célula comum (table data).
+          </li>
+          <li>
+            <b><code>&lt;th&gt;</code>:</b> Cria uma célula de cabeçalho (table
+            header).
+          </li>
+          <li>
+            <b><code>&lt;thead&gt;</code>:</b> Agrupa o cabeçalho da tabela.
+          </li>
+          <li>
+            <b><code>&lt;tbody&gt;</code>:</b> Agrupa o corpo da tabela.
+          </li>
+          <li>
+            <b><code>&lt;tfoot&gt;</code>:</b> Agrupa o rodapé da tabela.
+          </li>
+        </ul>
+
+        <p>Para estilizar tabelas, utilizamos CSS, por exemplo:</p>
+        <code>
+          table { border-collapse: collapse; } <br />
+          td, th { border: 1px solid black; padding: 8px; }
+        </code>
+      </section>
+
+      <hr />
+
+      <section id="tags-semanticas">
+        <h3>Tags semânticas e sua importância</h3>
+        <small><a href="#topo">início</a></small>
+        <p>
+          O HTML5 trouxe diversas tags semânticas que melhoram a estrutura do
+          documento, tornando-o mais legível tanto para humanos quanto para
+          máquinas.
+        </p>
+        <h4>Semântica:</h4>
+        <p>
+          É o uso de tags que descrevem o significado do conteúdo. Isso facilita
+          a manutenção, SEO e acessibilidade.
+        </p>
+
+        <h4>Mudanças do HTML5:</h4>
+        <p>
+          Antes, usava-se muitas <code>&lt;div&gt;</code> genéricas. Agora temos
+          tags como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+          <code>&lt;main&gt;</code>, entre outras.
+        </p>
+
+        <h4>Acessibilidade:</h4>
+        <p>
+          Com o uso correto de tags semânticas, leitores de tela conseguem
+          interpretar melhor a estrutura da página.
+        </p>
+
+        <h4>Web Scraping:</h4>
+        <p>
+          Facilita a extração de dados por sistemas automatizados, já que o
+          significado dos blocos está mais claro.
+        </p>
+
+        <h4>Principais tags semânticas:</h4>
+        <ul>
+          <li>
+            <b><code>&lt;main&gt;</code>:</b> Parte principal da página.
+          </li>
+          <li>
+            <b><code>&lt;header&gt;</code>:</b> Cabeçalho de uma seção ou
+            documento.
+          </li>
+          <li>
+            <b><code>&lt;footer&gt;</code>:</b> Rodapé de uma seção ou
+            documento.
+          </li>
+          <li>
+            <b><code>&lt;nav&gt;</code>:</b> Navegação principal da página.
+          </li>
+          <li>
+            <b><code>&lt;section&gt;</code>:</b> Seção temática do conteúdo.
+          </li>
+          <li>
+            <b><code>&lt;aside&gt;</code>:</b> Conteúdo complementar (ex: barra
+            lateral).
+          </li>
+          <li>
+            <b><code>&lt;article&gt;</code>:</b> Conteúdo independente e
+            reutilizável.
+          </li>
+          <li>
+            <b><code>&lt;blockquote&gt;</code>:</b> Citação em bloco de outra
+            fonte.
+          </li>
+          <li>
+            <b><code>&lt;q&gt;</code>:</b> Citação em linha.
+          </li>
+          <li>
+            <b><code>&lt;figure&gt;</code>:</b> Elemento para imagem ou
+            ilustração.
+          </li>
+          <li>
+            <b><code>&lt;figcaption&gt;</code>:</b> Legenda para o conteúdo da
+            <code>&lt;figure&gt;</code>.
+          </li>
+          <li>
+            <b><code>&lt;picture&gt;</code>:</b> Permite múltiplas fontes de
+            imagem responsiva.
+          </li>
+        </ul>
+
+        <h4>SEO (Search Engine Optimization):</h4>
+        <p>
+          O uso de tags semânticas ajuda os mecanismos de busca a entender
+          melhor a estrutura e relevância do conteúdo da página.
+        </p>
+      </section>
+    </main>
+
+    <footer id="referencias">
+      <h5>Links extenos para maiores estudos:</h5>
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+        <li><a href="https://www.dio.me/articles/tecnologia/af94e086-7222-4626-bf21-b7d8ebecdbfd">DIO.me</a></li>
+      </ul>
+      <h6 style="text-align: center;">Blog de estudos sobre HTML - 2025</h6>
+    </footer>
+  </font>
+  </body>
+</html>
