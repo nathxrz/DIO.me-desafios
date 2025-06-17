@@ -1,0 +1,142 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+.bar {
+  background-color: #f9f9fb;
+  padding: 15px;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+
+.sidebar {
+  border-right: solid 1px #cdcdcd;
+}
+
+.content {
+  max-width: 1440px;
+  margin: auto;
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+figure {
+  text-align: center;
+}
+
+.img-game {
+  width: 200px;
+}
+
+main h1,
+main h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+main h3 {
+  margin: 40px 0 10px;
+}
+
+main p {
+  text-align: justify;
+}
+
+.personagem {
+  color: #a83232; /* vermelho escuro */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: default; /* indica que não é link */
+  transition: color 0.3s;
+}
+
+.personagem:hover {
+  color: #d94c4c; /* vermelho claro no hover */
+}
+
+.ano {
+  font-weight: bold;
+  color: #b35e00; /* tom de marrom/âmbar */
+}
+
+.pessoa {
+  font-style: italic;
+  color: #2c3e50; /* azul escuro */
+}
+
+.local {
+  color: #3268a8; /* azul escuro */
+  font-style: italic;
+  font-weight: 600;
+  cursor: default;
+  transition: color 0.3s;
+}
+
+.local:hover {
+  color: #5a9bf5; /* azul claro no hover */
+}
+
+.empresa {
+  font-weight: bold;
+  color: #2a7f62; /* verde escuro */
+  cursor: default; /* muda o cursor para indicar que não é link */
+  transition: color 0.3s ease;
+}
+
+.empresa:hover {
+  color: #57b897; /* verde claro ao passar o mouse */
+}
+
+.trailer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+#voltar-topo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#voltar-topo a {
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anchors {
+  border-left: solid 1px #cdcdcd;
+  padding-left: 15px;
+}
+
+.footer {
+  border-top: solid 1px #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer small {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  padding: 30px;
+}
