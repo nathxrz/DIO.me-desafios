@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: #000;
   background-image: url("../assets/images/woman-code.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,10 +20,18 @@ body {
 }
 
 .banner {
+  background-color: #000;
   background-image: url(../assets/images/banner.png),
-    linear-gradient(#000, #103546, #03090c);
+    linear-gradient(
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(22, 74, 98, 0.33) 40%,
+      rgba(22, 74, 98, 0.33) 60%,
+      rgba(49, 168, 221, 0) 100%
+    );
   background-size: cover;
+
   padding: 5.6rem 7.5rem;
+
   border-bottom: 1px solid #33a8db;
 }
 
@@ -33,6 +42,7 @@ body {
   gap: 1.6rem;
 
   width: 51rem;
+
   margin: 0 auto;
 }
 
@@ -74,14 +84,19 @@ body {
 
 .banner-content button:hover {
   color: #fff;
+
   background-image: linear-gradient(#3ba1cd, #1572b7);
+
   cursor: pointer;
 }
 
 #course-content {
   background-color: #000000;
+
   text-align: center;
+
   padding: 6.4rem 31.6rem 14.4rem 33.2rem;
+
   border-bottom: 1px solid #33a8db;
 }
 
@@ -90,12 +105,17 @@ body {
   font-weight: bold;
   font-size: 3.2rem;
   letter-spacing: 0.61rem;
+  text-transform: uppercase;
+
   margin-bottom: 2.4rem;
 }
 
 #course-content p {
+  max-width: 79.2rem;
+
   color: #fff;
-  margin-bottom: 2.4rem;
+
+  margin: 0 auto 2.4rem;
 }
 
 .modules-list {
@@ -105,17 +125,23 @@ body {
 }
 
 .module {
-  color: #fff;
-  padding: 1.6rem 12.7rem;
-
+  width: 53.5rem;
   background-color: #252525;
+
+  color: #fff;
+
+  padding: 1.6rem 0;
+  margin: 0 auto;
+
   border: 1px solid #33a8db;
   border-radius: 5.7rem;
+
   box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
 .module:hover {
   background-color: #1a1a1a;
+
   cursor: pointer;
 }
 
@@ -125,6 +151,7 @@ body {
 
 #transform-world {
   width: 24.4rem;
+
   margin: 11.1rem 0 11.1rem 19.8rem;
 }
 
@@ -139,8 +166,11 @@ body {
 
 #professional-challenges {
   background-color: #000000;
+
   text-align: center;
+
   padding: 7.6rem 32.4rem 9.1rem;
+
   border-top: 1px solid #33a8db;
   border-bottom: 1px solid #33a8db;
 }
@@ -151,6 +181,7 @@ body {
   font-weight: bold;
   letter-spacing: 0.61rem;
   text-transform: uppercase;
+
   margin-bottom: 3.2rem;
 }
 
@@ -159,8 +190,10 @@ body {
 }
 
 #professional-challenges p {
+  width: 79.2rem;
+
   color: #fff;
-  margin-top: 3.2rem;
+  margin: 3.2rem auto 0;
 }
 
 footer {
@@ -171,7 +204,12 @@ footer {
 
   padding: 5.9rem 0 3.8rem;
 
-  background-image: linear-gradient(#000, #051014, #103546);
+  background-color: #000;
+  background-image: linear-gradient(
+    rgba(51, 168, 219, 0) 0%,
+    rgba(51, 168, 219, 0.11) 53%,
+    rgba(51, 168, 219, 0.2) 100%
+  );
 }
 
 footer img {
