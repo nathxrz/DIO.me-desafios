@@ -1,0 +1,47 @@
+/* sidebar */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  .video-card a {
+    color: #000;
+    display: flex;
+    gap: 1.6rem;
+  
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .video-card a:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-card img {
+    width: 16rem;
+    height: 9rem;
+  }
+  
+  .video-card__info {
+    width: 19.6rem;
+  }
+  
+  .video-card__info h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  
+    margin-bottom: 0.8rem;
+  }
+  
+  .video-card__info h3 + p {
+    margin-bottom: 0.7rem;
+  }
+  
+  .video-card__info p {
+    color: #515151;
+  
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
