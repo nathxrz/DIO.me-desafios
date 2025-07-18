@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  /* font-family: "Luckiest Guy", cursive;
+    font-family: "Open Sans", sans-serif; */
+}
+
+.header {
+  background-image: url(../assets/images/HeaderBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45.9rem;
+}
+
+.header__container {
+  max-width: 75.7rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
