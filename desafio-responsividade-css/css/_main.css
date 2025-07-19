@@ -1,0 +1,94 @@
+/* section: all */
+.channel,
+.voice-channel,
+.community,
+.image-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.6rem;
+}
+
+.channel__image,
+.voice-channel__image,
+.community__image,
+.image-video__image {
+  max-width: 100%;
+}
+
+.channel__title,
+.voice-channel__title,
+.community__title {
+  max-width: 32.9rem;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.channel__description,
+.voice-channel__description,
+.community__description,
+.image-video__description {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+/* section: channel */
+
+.channel {
+  padding: 4rem 0;
+}
+
+.channel__info {
+  width: 34.8rem;
+
+  color: #23272a;
+}
+
+/* section: voice-channel */
+.voice-channel {
+  background-color: #f6f6f6;
+  padding: 2.7rem 0;
+}
+
+.voice-channel__info {
+  width: 35.1rem;
+
+  color: #23272a;
+}
+
+/* section: community*/
+
+.community {
+  padding: 6.7rem 0;
+}
+
+.community__info {
+  width: 35.1rem;
+
+  color: #23272a;
+}
+
+/* section: image-video*/
+
+.image-video {
+  background-color: #f6f6f6;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  padding: 4rem 0 4.5rem;
+}
+
+.image-video__title {
+  max-width: 60.8rem;
+
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.image-video__description {
+  max-width: 80.2rem;
+}

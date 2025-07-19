@@ -1,0 +1,70 @@
+.header {
+  height: 45.9rem;
+
+  background-image: url(../assets/images/HeaderBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 9.4rem 0 9.5rem;
+}
+
+.header__info {
+  max-width: 75.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.header__title {
+  max-width: 31.3rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 5.6rem;
+}
+
+.header__description {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.header__button {
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  border: none;
+  border-radius: 2.8rem;
+}
+
+.header__button--primary {
+  color: #23272a;
+
+  background-color: #ffffff;
+
+  padding: 1.1rem 2.4rem;
+}
+
+.header__button--secondary {
+  color: #ffffff;
+
+  background-color: #23272a;
+
+  padding: 1.1rem 1.7rem;
+}
+
+.header__button:hover {
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

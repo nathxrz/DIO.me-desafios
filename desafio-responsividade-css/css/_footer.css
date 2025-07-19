@@ -1,0 +1,15 @@
+.footer {
+  background-color: #23272a;
+
+  text-align: center;
+
+  padding: 3.5rem 0 3.6rem;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__image {
+  max-width: 100%;
+}
