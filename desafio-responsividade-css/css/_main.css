@@ -17,6 +17,15 @@
   max-width: 100%;
 }
 
+.channel__info,
+.voice-channel__info,
+.community__info,
+.image-video__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .channel__title,
 .voice-channel__title,
 .community__title {

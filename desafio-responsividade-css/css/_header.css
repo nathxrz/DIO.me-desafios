@@ -4,6 +4,7 @@
   background-image: url(../assets/images/HeaderBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
   padding: 9.4rem 0 9.5rem;
 }
